@@ -2,6 +2,24 @@
 
 > Mục tiêu: phát triển, build và kiểm thử container local; chuẩn bị image bàn giao đội vận hành. Không chạy các lệnh xóa dữ liệu trên máy đang phục vụ production.
 
+## Tổng quan công cụ và thành phần
+
+| Công cụ / thành phần | Vai trò | Khi nào sử dụng |
+|---|---|---|
+| Docker Engine | Chạy và quản lý container/image | Chạy dịch vụ cô lập |
+| Docker CLI (`docker`) | Điều khiển Docker daemon | Build, run, logs, inspect |
+| Docker Desktop | Docker trên Windows/macOS có giao diện | Phát triển local trên desktop |
+| Docker Compose | Khai báo/chạy nhiều service bằng YAML | API + DB + cache |
+| Dockerfile | Công thức build image | Đóng gói ứng dụng |
+| Docker Buildx | Build nâng cao, đa kiến trúc | Build amd64/arm64 |
+| Docker Hub / Registry | Lưu trữ và phân phối image | CI/CD, bàn giao Ops |
+| lazydocker | TUI quản lý container, image, log | Quan sát/debug nhanh |
+| dive | Phân tích từng layer image | Tối ưu kích thước image |
+| Trivy | Quét lỗ hổng và cấu hình | Kiểm tra bảo mật trước phát hành |
+| Volumes | Lưu dữ liệu bền vững ngoài vòng đời container | Database, upload cần lưu |
+| Networks | Kết nối các container | Giao tiếp giữa services |
+
+
 ## 1. Chọn phương án cài đặt
 
 | OS | Khuyến nghị | Ghi chú |
