@@ -2,6 +2,27 @@
 
 > Dành cho Windows (WSL2), Ubuntu và macOS. Thực hành local trước khi bàn giao đội Ops triển khai cluster thực tế.
 
+## Tổng quan công cụ và khái niệm
+
+| Công cụ / khái niệm | Vai trò | Khi nào sử dụng |
+|---|---|---|
+| Kubernetes | Điều phối container trên cluster | Triển khai và vận hành service |
+| kubectl | Tương tác Kubernetes API | Apply, get, describe, logs |
+| k9s | TUI quan sát Pod, Deployment, log | Debug cluster nhanh |
+| Helm | Package manager cho Kubernetes | Đóng gói, nâng cấp ứng dụng |
+| kubectx / kubens | Chuyển context / namespace | Làm việc nhiều cluster |
+| kind | Cluster Kubernetes local bằng Docker | Test manifest, CI |
+| k3d | Chạy k3s cluster trong Docker | Lab local nhẹ |
+| stern | Theo dõi log nhiều Pod | Debug microservices |
+| Pod | Đơn vị chạy container nhỏ nhất trong K8s | Hiểu trạng thái workload |
+| Deployment | Quản lý replicas và rollout Pod | Deploy ứng dụng stateless |
+| Service | Định danh và kết nối mạng tới Pod | Truy cập nội bộ |
+| Ingress / Gateway | Định tuyến traffic HTTP(S) vào cluster | Public API/web |
+| ConfigMap / Secret | Cấu hình thường / dữ liệu nhạy cảm | Cấp cấu hình cho Pod |
+| HPA | Tự điều chỉnh số Pod theo metric | Autoscaling |
+| PV / PVC | Cấp phát và yêu cầu lưu trữ | Dữ liệu bền vững |
+
+
 ## 1. Bộ công cụ
 
 | Công cụ | Vai trò |
