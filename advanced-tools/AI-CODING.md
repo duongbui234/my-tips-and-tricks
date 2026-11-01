@@ -2,6 +2,26 @@
 
 > Hướng dẫn workflow và kiểm tra, không lưu API key/token vào repository. Tính năng, tên model, giới hạn và cách đăng nhập có thể thay đổi theo phiên bản hoặc gói tài khoản.
 
+## Tổng quan công cụ và khái niệm
+
+| Công cụ / khái niệm | Vai trò | Khi nào sử dụng |
+|---|---|---|
+| Codex CLI | AI coding agent trong terminal | Đọc repo, sửa code, chạy test |
+| Claude Code | AI coding agent trong terminal | Phân tích, triển khai, refactor |
+| MCP | Giao thức kết nối AI với tools và dữ liệu | Cho agent truy cập nguồn ngoài |
+| MCP server | Cung cấp công cụ/tài nguyên qua MCP | GitHub, database, docs... |
+| AI agent | Hệ thống AI thực hiện tác vụ nhiều bước | Nghiên cứu, code, kiểm thử |
+| Subagent | Agent phụ có nhiệm vụ/phạm vi riêng | Chia việc, nghiên cứu song song |
+| Prompt / instruction file | Quy định mục tiêu, phạm vi, tiêu chí | Giữ hành vi agent nhất quán |
+| Git | Version control | Theo dõi, hoàn tác thay đổi |
+| GitHub CLI (`gh`) | Quản lý repo, issue, PR | Tạo PR, review workflow |
+| ripgrep (`rg`) | Tìm kiếm nhanh trong source | Truy vết code |
+| Node.js / npm | Runtime và package manager JavaScript | Cài CLI hoặc chạy tool JS |
+| uv | Quản lý Python package/project | Chạy tool và project Python |
+| Sandbox / approvals | Giới hạn quyền thực thi và thao tác | Kiểm soát an toàn agent |
+| Session / resume | Tiếp tục phiên tương tác đã lưu | Làm việc dài hơi |
+
+
 ## 1. Chuẩn bị môi trường
 
 - Git và GitHub CLI (`git --version`, `gh --version`).
