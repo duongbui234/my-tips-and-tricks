@@ -1,5 +1,29 @@
 # Windows 11 — PowerShell 7 Developer Terminal
 
+## Tổng quan công cụ
+
+| Công cụ | Vai trò | Khi nào sử dụng |
+|---|---|---|
+| Windows Terminal | Ứng dụng terminal nhiều tab/pane | Mở PowerShell, WSL, SSH trong một cửa sổ |
+| PowerShell 7 (`pwsh`) | Shell và scripting đa nền tảng | Viết script, quản lý hệ thống, gọi CLI |
+| Oh My Posh | Tùy chỉnh prompt và hiển thị trạng thái Git | Muốn prompt trực quan |
+| PSReadLine | Gợi ý, lịch sử, tô màu câu lệnh | Nhập lệnh nhanh, giảm lỗi |
+| Terminal-Icons | Hiển thị icon trong danh sách file | Duyệt thư mục dễ nhìn |
+| posh-git | Git completion và thông tin trạng thái | Làm việc với Git |
+| fzf / PSFzf | Tìm kiếm mờ tương tác | Tìm file, history, nhánh |
+| zoxide | Nhảy nhanh tới thư mục đã truy cập | Chuyển dự án liên tục |
+| ripgrep (`rg`) | Tìm nội dung trong file rất nhanh | Tra cứu code |
+| fd | Tìm file theo tên | Thay thế nhiều trường hợp `find` |
+| bat | Xem file có syntax highlighting | Đọc code, config |
+| eza | Liệt kê file dạng hiện đại | Xem tree, metadata |
+| lazygit | Giao diện Git trong terminal | Stage, commit, diff |
+| delta | Hiển thị Git diff dễ đọc | Review thay đổi |
+| GitHub CLI (`gh`) | Thao tác repo, issue, PR | Workflow GitHub |
+| fnm | Quản lý nhiều phiên bản Node.js | Đổi Node theo dự án |
+| uv | Quản lý Python, môi trường và package | Dự án Python |
+| jq | Xử lý JSON | Lọc output API và CLI |
+
+
 ## Mục tiêu
 Cài và cấu hình các công cụ: Oh My Posh, Terminal-Icons, PSReadLine, zoxide, fzf + PSFzf, ripgrep, fd, lazygit, posh-git, delta, GitHub CLI, bat, eza, fnm, uv. Giữ Windows PowerShell 5.1 để tương thích, sử dụng `pwsh` (PowerShell 7+) cho công việc mới.
 
