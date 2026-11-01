@@ -1,5 +1,25 @@
 # DevOps CI/CD — GitHub Actions, GitLab CI, Jenkins, SSH
 
+## Tổng quan công cụ và khái niệm
+
+| Công cụ / khái niệm | Vai trò | Khi nào sử dụng |
+|---|---|---|
+| GitHub Actions | CI/CD tích hợp GitHub | Test/build/deploy theo push, PR |
+| GitLab CI/CD | CI/CD tích hợp GitLab | Pipeline theo `.gitlab-ci.yml` |
+| GitLab Runner | Agent thực thi job GitLab CI | Chạy pipeline |
+| Jenkins | Automation server CI/CD | Pipeline tùy biến, self-host |
+| Jenkinsfile | Pipeline as Code cho Jenkins | Version control pipeline |
+| SSH | Kết nối/điều khiển máy từ xa an toàn | Truy cập server, Git |
+| GitHub CLI (`gh`) | Quản lý GitHub từ terminal | PR, release, workflow |
+| Docker / Buildx | Build image ứng dụng | Artifact container |
+| Container Registry | Lưu image đã build | Phân phối cho cluster |
+| Kubernetes | Triển khai và quản lý workload | CD trên cluster |
+| Helm | Quản lý release Kubernetes | Upgrade/rollback |
+| Secrets manager | Lưu và cấp thông tin bí mật | Token, password, credentials |
+| Artifact / SBOM | Đầu ra build / danh mục thành phần phần mềm | Truy vết và kiểm toán |
+| Monitoring / logging | Theo dõi sức khỏe và lỗi hệ thống | Vận hành sau deploy |
+
+
 ## 1. Phân biệt thành phần
 
 - **CI:** lint, test, build, security scan trên mỗi push/PR.
