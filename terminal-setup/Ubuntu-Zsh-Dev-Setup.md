@@ -1,5 +1,30 @@
 # Ubuntu — Zsh Developer Terminal
 
+## Tổng quan công cụ
+
+| Công cụ | Vai trò | Khi nào sử dụng |
+|---|---|---|
+| Zsh | Shell tương tác | Terminal dev hằng ngày |
+| Oh My Zsh | Framework quản lý cấu hình và plugin Zsh | Completion, alias, plugin |
+| Powerlevel10k / Starship | Prompt hiển thị trạng thái shell/Git | Chọn **một** prompt |
+| zsh-autosuggestions | Gợi ý lệnh theo lịch sử | Gõ lệnh nhanh |
+| zsh-syntax-highlighting | Tô màu lệnh hợp lệ/không hợp lệ | Phát hiện lỗi cú pháp sớm |
+| fzf | Tìm kiếm mờ tương tác | History, file, branch |
+| zoxide | Điều hướng thư mục theo tần suất | Chuyển giữa dự án |
+| ripgrep (`rg`) | Tìm chuỗi trong code | Tìm symbol/config |
+| fd | Tìm file theo tên | Duyệt source tree |
+| bat | Xem file có tô màu cú pháp | Đọc config/code |
+| eza | Liệt kê file và thư mục | Thay thế `ls` khi cần |
+| lazygit | Git TUI | Stage, commit, review |
+| git-delta (`delta`) | Renderer cho Git diff | So sánh code |
+| tmux | Quản lý nhiều phiên terminal và session | Chạy nhiều tác vụ trong một SSH |
+| direnv | Nạp biến môi trường theo thư mục | Thiết lập env dự án, cần cho phép `direnv allow` |
+| uv | Python package/project manager | Virtualenv, dependency |
+| gh | GitHub CLI | PR, issue, auth |
+| btop | Theo dõi CPU, RAM, process | Chẩn đoán hiệu năng |
+| jq / yq | Xử lý JSON / YAML | API, Kubernetes manifest |
+
+
 ## Mục tiêu
 Terminal phục vụ Git, Docker, SSH, Python, Node.js, Codex/Claude Code và Kubernetes. Dùng Zsh + **một** prompt (Powerlevel10k hoặc Starship), fzf, zoxide, ripgrep, fd, bat, eza, lazygit, delta, tmux, direnv, uv, gh, btop, jq, yq. Nếu Ubuntu đã có Oh My Zsh/Powerlevel10k, giữ nguyên và không cài thêm prompt thứ hai.
 
