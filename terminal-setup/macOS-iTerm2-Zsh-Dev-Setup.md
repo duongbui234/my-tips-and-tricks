@@ -1,5 +1,27 @@
 # macOS — iTerm2 + Oh My Zsh + Powerlevel10k Developer Terminal
 
+## Tổng quan công cụ
+
+| Công cụ | Vai trò | Khi nào sử dụng |
+|---|---|---|
+| iTerm2 | Ứng dụng terminal nhiều pane, profile | Terminal chính trên macOS |
+| Homebrew | Trình quản lý package | Cài, nâng cấp CLI |
+| Zsh | Shell mặc định thường dùng trên macOS | Chạy lệnh, scripting |
+| Oh My Zsh | Framework plugin và cấu hình Zsh | Completion, alias |
+| Powerlevel10k | Prompt nhanh, tùy biến | Hiển thị Git, path; giữ cấu hình hiện tại |
+| zsh-autosuggestions | Gợi ý lệnh theo history | Nhập lệnh nhanh |
+| zsh-syntax-highlighting | Tô màu cú pháp lệnh | Giảm gõ sai |
+| fzf | Tìm kiếm mờ | File, history, Git |
+| zoxide | Điều hướng thư mục thông minh | Chuyển workspace |
+| fd / rg | Tìm file / tìm nội dung | Khám phá code |
+| eza / bat | Liệt kê file / đọc file đẹp hơn | Duyệt project |
+| lazygit / git-delta | Git TUI / Git diff renderer | Review và commit |
+| tmux | Multiplexer cho terminal | Giữ phiên làm việc |
+| direnv | Nạp biến môi trường theo project | Env riêng mỗi repo |
+| btop | Theo dõi tài nguyên | CPU, RAM, process |
+| jq / yq | Xử lý JSON / YAML | API và manifest |
+
+
 ## Môi trường đã xác nhận
 - iTerm2 **3.7.6** (ứng dụng hiển thị là `iTerm.app`, Homebrew cask `iterm2`).
 - Shell `/bin/zsh`; đang dùng **Oh My Zsh + Powerlevel10k**. **Không cài Starship chồng lên Powerlevel10k**.
